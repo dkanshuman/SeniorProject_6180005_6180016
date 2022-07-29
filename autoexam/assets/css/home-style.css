@@ -1,0 +1,434 @@
+/* ============ GENERAL SECTION STARTS ============  */
+:root{
+    --primary-color: #031f42;
+    --secondary-color: #FFBB00;
+    --info-color: #0071dc;
+    --light-info-color: #edf6ff;
+}
+body{
+    /* font-family: "Karla", Sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* ===================== TOPBAR STARTS ===================== */
+.topbar{
+    background-color: var(--primary-color);
+}
+.toplist{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1.5px;
+    padding: 12px 0;
+}
+.toplist a{
+    color: #eaf5ff;
+    display: block;
+    padding-right: 30px;
+    font-size: 14px;
+    padding-top: 3px;
+}
+.toplist a i{
+    margin-right: 10px;
+}
+
+/* ===================== TOPBAR ENDS ===================== */
+
+
+/* ===================== HEADER SECTION STARTS ===================== */
+.navbar{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: var(--primary-color);
+}
+.navlist{
+    display: flex;
+    padding: 10px 0;
+}
+.navlist a{
+    display: block;
+    padding:  12px 20px 12px 0;
+    font-size: 14px;
+    transition: all 0.3s;
+    color: var(--info-color);
+}
+.navlist a.blue-btn{
+    padding-left: 12px;
+}
+
+
+/* ===================== HEADER SECTION ENDS ===================== */
+
+/* ===================== HERO SECTION STARTS ===================== */
+
+#hero-section{
+    width: 100%;
+    background-color: #EAF9F6;
+    background-image: url(../images/01.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: top left; 
+}
+#hero-section > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.hero-content{
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+    height: 100%;
+    z-index: 10;
+}
+.transparent{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-title{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 32px;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+.hero-subtitle{
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 70%;
+    color: var(--info-color);
+}
+.hero-text{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.hero-right{
+    display: none;
+}
+.hero-list{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.hero-list li{
+   padding-right: 30px; 
+}
+.hero-list li span{
+    font-weight: bold;
+    color: #121212;
+}
+.hero-list li:nth-child(1){
+    color: #3AD532;
+}
+.hero-list li:nth-child(2){
+    color: #FFBB00;
+}
+.hero-list li:nth-child(3){
+    color: #EE4158;
+}
+
+/* ===================== HERO SECTION ENDS ===================== */
+
+
+#content{
+    padding: 100px 0;
+}
+#content > .container > .heading,
+#content > .container > .subtitle
+{
+    text-align: center;
+}
+.heading{
+    color: var(--info-color);
+}
+.work-content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.work-block{
+    padding: 20px;
+    flex-basis: 33%;
+}
+.work-block img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.work-title{
+    font-weight: normal;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+.work-block > p{
+    line-height: 1.4;
+}
+
+
+/* ===========ABOUT SECTION STARTS============= */
+
+#about{
+    position: relative;
+}
+#about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    padding: 100px 0;
+}
+.about-left img{
+    width: 100%;
+}
+.about-right{
+    height: 100%;
+    z-index: 10;
+    padding: 20px 20px;
+    line-height: 1.5;
+}
+.subtitle{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.heading{
+    font-size: 28px;
+    margin-bottom: 20px;
+    z-index: 10;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.heading > span{
+    color: var(--info-color);
+}
+.about-right p{
+    font-size: 16px;
+    z-index: 10;
+    margin-bottom: 30px;
+}
+.transparent-btn{
+    /* color: #fff; */
+    border: solid 1px #fff;
+    display: inline-block;
+}
+
+/* ===========ABOUT SECTION ENDS============= */
+
+/* ======= testimonial-content STARTS====== */
+#testimonial-content{
+    background-color: var(--primary-color);
+    background-image: url(../images/pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#testimonial-content > .container{
+    padding: 40px 20px;
+    text-align: center;
+}
+#testimonial-content > .container > p{
+    margin-bottom: 30px;
+}
+#testimonial-content .quotes{
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+#testimonial-content .text{
+    width: 95%;
+    margin: auto;
+    color: #fff;
+    font-family: "Karla", Sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.creator{
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+.creator .creator-heading{
+    display: block;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+
+/* ============ FOOTER BLOCK STARTS ===========*/
+footer{
+    background-color: var(--secondary-color);
+    padding: 15px 0;
+    color: var(--primary-color);
+}
+footer > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer > .container > .go-up{   
+    padding: 5px 8px;
+    display: block;
+    color: #fff;
+    font-size: 12px; 
+    border: solid 1px #fff;
+    transition: 0.2s;
+}
+footer > .container > .go-up:hover{
+    background-color: #fff;
+    color: var(--secondary-color);   
+}
+/* ============ FOOTER BLOCK ENDS ============ */
+
+
+/* ============ FORM BLOCK STARTS ============ */
+.form-block{
+    padding: 100px 30px;
+    background-color: #F7F7F7;
+}
+.form-container{
+    padding: 70px 50px;
+    box-shadow: 1px 2px 10px #eee;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+}
+.small-form{
+    width: 100%;
+}
+.form-block .heading,
+.form-block .subtitle
+{
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.col{
+    flex-basis: 48%;
+}
+.row input[type="text"],
+.row input[type="email"],
+.row input[type="password"]
+{
+    margin-top: 20px;
+
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #F7F7F7;
+    border: none;
+}
+.mt{
+    margin-top: 20px;
+}
+/* ============ FORM BLOCK ENDS ============ */
+
+@media (min-width: 768px) {
+    .container{
+        width: 80%;
+    }
+    .toplist{
+        flex-direction: row;
+    }
+    .navbar{
+        flex-direction: row;
+    }
+    
+    #testimonial-content > .container{
+        padding: 60px 30px;
+    }
+    #testimonial-content .text{
+        width: 75%;
+    }
+}
+@media (min-width: 992px) {
+    .navbar{
+        padding: 20px 0;
+        flex-direction: row;
+    }
+    .title{
+        color: var(--primary-color);
+    }
+    .navlist{
+        display: flex;
+    }
+    .navlist a{
+        padding:  12px 20px;
+    }
+    .about-left,
+    .about-right
+    {
+        flex-basis: 50%;
+    }
+
+    #hero-section > .container{
+        flex-direction: row;
+    }
+    #about .container{
+        flex-direction: row;
+    }
+    .about-right{
+        padding: 20px 50px;
+    }
+    .work-content{
+        flex-direction: row;
+    }
+    #hero-section{
+        background-image: url(../images/02.png), url(../images/03.png);
+        background-repeat: no-repeat;
+        background-position: right bottom, top left; 
+    }
+    .hero-content{
+        padding: 50px 0;
+    } 
+    .hero-right{
+        display: block;
+        padding: 50px 0;
+        flex-basis: 30%;
+        padding: 50px 30px;
+    }
+    .hero-right > .hero-img-block{
+        padding: 10px;
+    }
+    .hero-right > .hero-img-block > img{
+        width: 100%;
+        display: block;  
+        position: relative;
+    }
+    .form-container{
+        width: 50%;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .small-form{
+        width: 40%;
+    }
+}

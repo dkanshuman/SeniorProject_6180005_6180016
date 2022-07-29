@@ -1,0 +1,50 @@
+/* @page{
+    margin: 10%;
+
+    @top-center{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        content: counter(page);
+    }
+}
+
+@media-all{
+
+} */
+
+/* #content{
+    display: table;
+}
+
+#pageFooter{
+    display: table-footer-group;
+}
+
+#pageFooter:after{
+    counter-increment: page;
+    content: "Page " counter(page);
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 20;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #222;
+    background-image: linear-gradient(top, #eee, #ccc);
+}
+ */
+
+ @media print{
+    .page{
+        page-break-after: always;
+    }
+    .page .pageEnd::after{
+        counter-increment: section;
+        content: "Page " counter(section) " ";
+    }
+}
+
+
+
+
+
